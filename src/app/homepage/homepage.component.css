@@ -1,0 +1,80 @@
+.content{
+    height: 100vh;
+    width: 100vw;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    opacity: 50%;
+}
+
+.background img{
+    display: none;
+}
+
+.title{
+    font-size: 1.3em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    justify-content: center;
+}
+
+.title h1{
+    text-shadow: 2px 2px #25943d;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.arrow img{
+    width: 5em;
+    height: 5em;
+    animation: bounce 2s infinite;
+}
+
+
+/* media queries */
+@media screen and (min-width: 1001px) {
+    .background img{
+        display: block;
+        z-index: -1;
+    }
+
+    .content{
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+
+    .arrow{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 45%;
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+        animation-iteration-count: infinite; /* otherwise it'll just play once */
+        cursor: pointer;
+    }
+
+    .arrow img{
+        width: 7em;
+        height: 7em;
+    }
+}
+
+    
