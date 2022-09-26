@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
   {path: '',  component: HomepageComponent},// default route
-  {path: 'about',  component: HomepageComponent},
+  {path: 'about',  component: AboutComponent},
   {path: 'skills',  component: HomepageComponent},
   {path: 'projects',  component: HomepageComponent}, 
 ];

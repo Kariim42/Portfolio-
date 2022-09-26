@@ -1,0 +1,78 @@
+.content{
+    height: 90vh;
+    width: 100%;
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation h1{
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    color:#d1cece;
+    text-shadow: 2px 2px #474747;
+}
+
+.row img{
+    width: 75%;
+    position: absolute;
+    bottom: -90%;
+    opacity: 70%;
+    left: -5%;
+}
+
+.row p{
+    font-size: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    color:#d4d1d1;
+    text-shadow: 2px 2px #474747;
+    margin: 0em 1em 0 1em;
+}
+
+@media screen and (min-width: 1207px) {
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .row img{
+        position: static;
+        width: 28%;
+        border-radius: 25%;
+    }
+
+    .presentation p{
+        font-size: 3.1em;
+    }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1207px) {
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .row img{
+        position: absolute;
+        width: 35%;
+        bottom: -90%;
+        left: 40%;
+    }
+
+    .presentation p{
+        font-size: 3em;
+    }
+}
