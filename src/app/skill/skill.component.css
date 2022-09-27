@@ -1,0 +1,315 @@
+.content{
+    height: 100%;
+    width: 100%;
+    background-color: #272727;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1em;
+}
+
+.title{
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    color:#d1cece;
+    text-shadow: 2px 2px #474747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.title h1{
+    margin: 0;
+    padding: 0;
+}
+
+div#gallery {
+	perspective: 1200px;
+}
+figure{
+    padding: 0;
+    margin: 0;
+}
+
+figure#spinner {
+	transform-style: preserve-3d;
+	height: 5em;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50% -50%;
+	transition: 5s;
+}
+figure#spinner img {
+	width: 30%;
+	position: absolute;
+	left: 35%;
+	transform-origin: 50% 50% -40em;
+	outline: 1px solid transparent;
+}
+
+/*Keyframes carousel*/
+
+@keyframes numberOne {
+    from { transform: rotateY(0deg); }
+          to { transform: rotateY(-360deg); }
+  }
+
+@keyframes numberTwo {
+    from { transform: rotateY(-45deg); }
+    to { transform: rotateY(-405deg); }
+  }
+
+ @keyframes numberThree {
+    from { transform: rotateY(-90deg); }
+    to { transform: rotateY(-450deg); }
+    }
+
+ @keyframes numberFour {
+    from { transform: rotateY(-135deg); }
+    to { transform: rotateY(-495deg); }
+    }
+
+ @keyframes numberFive {
+    from { transform: rotateY(-180deg); }
+    to { transform: rotateY(-540deg); }
+    }
+
+@keyframes numberSix {
+    from { transform: rotateY(-225deg); }
+    to { transform: rotateY(-585deg); }
+    }
+
+@keyframes numberSeven {
+    from { transform: rotateY(-270deg); }
+    to { transform: rotateY(-630deg); }
+    }
+
+ @keyframes numberEight {
+    from { transform: rotateY(-315deg); }
+    to { transform: rotateY(-675deg); }
+    }
+
+figure#spinner img:nth-child(1) {
+    transform: rotateY(0deg);
+    animation: numberOne 5s infinite linear;
+}
+figure#spinner img:nth-child(2) {
+	transform: rotateY(-45deg);
+    animation: numberTwo 5s infinite linear;
+}
+figure#spinner img:nth-child(3) {
+	transform: rotateY(-90deg);
+    animation: numberThree 5s infinite linear;
+}
+figure#spinner img:nth-child(4) {
+	transform: rotateY(-135deg);
+    animation: numberFour 5s infinite linear;
+}
+figure#spinner img:nth-child(5) {
+	transform: rotateY(-180deg);
+    animation: numberFive 5s infinite linear;
+}
+figure#spinner img:nth-child(6) {
+	transform: rotateY(-225deg);
+    animation: numberSix 5s infinite linear;
+}
+figure#spinner img:nth-child(7) {
+	transform: rotateY(-270deg);
+    animation: numberSeven 5s infinite linear;
+}
+figure#spinner img:nth-child(8) {
+	transform: rotateY(-315deg);
+    animation: numberEight 5s infinite linear;
+}
+
+.display{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 600px;
+}
+
+/*Progress bar*/
+.bar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bar img{
+    width: 15em;
+}
+
+.progress {
+    margin: 50px auto;
+    padding: 2px;
+    width: 80%;
+    max-width: 500px;
+    border: 3px solid #05e35e;
+    height: 20px;
+  }
+  
+  .progress .progress__barOne {
+    height: 100%;
+    width: 0%;
+    background-color: #05e35e;
+    animation: fill-barOne 3s forwards;
+  }
+
+  @keyframes fill-barOne {
+    from {width: 0%;}
+    to {width: 80%;}
+  }
+
+  .progress .progress__barTwo {
+    height: 100%;
+    width: 0%;
+    background-color: #05e35e;
+    animation: fill-barTwo 3s forwards;
+  }
+
+  @keyframes fill-barTwo {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
+  .progress .progress__barThree {
+    height: 100%;
+    width: 0%;
+    background-color: #05e35e;
+    animation: fill-barThree 3s forwards;
+  }
+
+  @keyframes fill-barThree {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
+
+  .progress .progress__barFour {
+    height: 100%;
+    width: 0%;
+    background-color: #05e35e;
+    animation: fill-barFour 3s forwards;
+  }
+
+  @keyframes fill-barFour {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
+  .progress .progress__barFive {
+    height: 100%;
+    width: 0%;
+    background-color: #05e35e;
+    animation: fill-barFive 3s forwards;
+  }
+
+  @keyframes fill-barFive {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
+  .progress .progress__barSix {
+    height: 100%;
+    width: 0%;
+    background-color: #05e35e;
+    animation: fill-barSix 3s forwards;
+  }
+
+  @keyframes fill-barSix {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
+  .progress .progress__barSeven {
+    height: 100%;
+    width: 0%;
+    background-color: #05e35e;
+    animation: fill-barSeven 3s forwards;
+  }
+
+  @keyframes fill-barSeven {
+    from {width: 0%;}
+    to {width: 60%;}
+  }
+
+  .progress .progress__barEight {
+    height: 100%;
+    width: 0%;
+    background-color: #05e35e;
+    animation: fill-barEight 3s forwards;
+  }
+
+  @keyframes fill-barEight {
+    from {width: 0%;}
+    to {width: 90%;}
+  }
+  
+
+  
+ 
+
+/* media queries */
+
+
+@media screen and (max-width: 1500px) {
+    .display{
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 1401px) {
+    figure#spinner img {
+        transform-origin: 50% 50% -30em;
+    } 
+        .display{
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (min-width: 1299px) and (max-width: 1500px) {
+        .display{
+        margin-bottom: 400px;
+    }
+}
+
+@media screen and (max-width: 1201px) {
+    figure#spinner img {
+        transform-origin: 50% 50% -20em;
+    } 
+}
+
+@media screen and (max-width: 1001px) {
+    figure#spinner img {
+        transform-origin: 50% 50% -20em;
+    }
+    .title{
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    figure#spinner img {
+        transform-origin: 50% 50% -15em;
+    }
+    .display{
+        margin-bottom: 80px;
+    }
+    .progress {
+        margin: 50px auto;
+        padding: 2px;
+        width: 50%;
+        max-width: 500px;
+        border: 3px solid #05e35e;
+        height: 20px;
+      }
+}
+
+@media screen and (max-width: 550px) {
+    figure#spinner img {
+        transform-origin: 50% 50% -10em;
+    }
+    .title{
+        font-size: 1.5em;
+    }
+}
