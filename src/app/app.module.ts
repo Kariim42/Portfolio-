@@ -19,7 +19,7 @@ import { ProjectComponent } from './project/project.component';
     ProjectComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
