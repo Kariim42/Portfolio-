@@ -75,3 +75,13 @@
         font-size: 3em;
     }
 }
+
+@media screen and (min-width: 1650px) {
+    .row img{
+        position: absolute;
+        width: 30%;
+        bottom: -90%;
+        left: 40%;
+        border-radius: 0;
+    }
+}

@@ -1,12 +1,12 @@
 <!--NAV-->
 <div class="customNavbar">
-    <div><a routerLink="/"><img src="..\assets\images\logo.svg" alt="" class="logo"></a>
+    <div><a href="/#homepage"><img src="..\assets\images\logo.svg" alt="" class="logo"></a>
     </div>
     <!--Desktop Menu-->
     <div class="menuDesktop">
-        <a routerLink="/about" class="burgerMenuOpenLink">About me</a>
-        <a routerLink="/skills" class="burgerMenuOpenLink">My skills</a>
-        <a routerLink="/projects" class="burgerMenuOpenLink">My projects</a>
+        <a href="/#about" class="burgerMenuOpenLink">About me</a>
+        <a href="/#skills" class="burgerMenuOpenLink">My skills</a>
+        <a href="/#projects" class="burgerMenuOpenLink">My projects</a>
     </div>
     <!--Mobile Menu burger-->
     <div (click)="openMenu()" class="burgerMenu" [ngClass]="{burgerMenuContentActive : isActive}">
@@ -14,8 +14,8 @@
     </div>
 </div>
 <div class="burgerMenuClosed" [ngClass]="{burgerMenuOpen : isActive}">
-    <a routerLink="/about" class="burgerMenuOpenLink">About me</a>
-    <a routerLink="/skills" class="burgerMenuOpenLink">My skills</a>
-    <a routerLink="/projects" class="burgerMenuOpenLink">My projects</a>
+    <a href="/#about" class="burgerMenuOpenLink">About me</a>
+    <a href="/#skills" class="burgerMenuOpenLink">My skills</a>
+    <a href="/#projects" class="burgerMenuOpenLink">My projects</a>
     <div class="burgerMenuOpenWhite"></div>
 </div>
