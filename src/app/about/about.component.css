@@ -25,6 +25,7 @@
     position: absolute;
     bottom: 0%;
     left: -5%;
+    opacity: 60%;
 }
 
 .row p{
@@ -67,7 +68,7 @@
     .row img{
         position: absolute;
         width: 35%;
-        bottom: -90%;
+        bottom: 0%;
         left: 40%;
     }
 
@@ -80,7 +81,7 @@
     .row img{
         position: absolute;
         width: 30%;
-        bottom: -90%;
+        bottom: 0%;
         left: 40%;
         border-radius: 0;
     }
